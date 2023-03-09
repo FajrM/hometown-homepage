@@ -1,0 +1,263 @@
+body, html {
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+/** Welcome Section **/
+
+#welcome_section {
+        background: url("images/birmingham_city_centre.jpg") no-repeat center;
+        background-size: cover;
+        position: relative;
+        height: 700px;
+        overflow: hidden;
+        text-align: center;
+}
+
+#welcome_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Tilt Prism', cursive;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 0.2em;
+    margin: 0px;
+}
+
+#welcome_text {
+    font-size: 80px;
+    font-family: 'Grand Hotel', cursive;
+    text-align: center;
+    letter-spacing: 0em;
+    margin-bottom: 1px;
+}
+
+
+#welcome_container h1 {
+    margin-top: 1px;
+}
+
+
+
+
+/** Introduction & Info Section **/
+.intro_info {
+    text-align: left;
+    margin-right: 110px;
+    margin-left: 110px;
+    margin-bottom: 75px;
+    color: #013a63;
+}
+
+
+.intro_info h1 {
+    margin-right: 500px;
+    font-size: 40px;
+    margin-bottom: 4px;
+    color: #01497c;
+}
+
+.intro_info p {
+    font-size: 20px;
+}
+
+
+/** Try Something Out Section **/
+.whats_on {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #01497c;
+    margin-bottom: 8px;
+}
+
+
+/** 
+#4682B4 - d blue 
+#62b6cb - l blue 
+#181818 - black 
+
+
+new colours:
+#013a63 - d blue
+#01497c - l blue
+#2a6f97 - bg card
+**/
+
+
+/** Activity Cards Section **/
+
+.activity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.activity_flip_card {
+    background-color: transparent;
+    width: 320px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+
+.activity_flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+   
+}
+  
+
+.activity_flip_card:hover .activity_flip_card_inner {
+    transform: rotateY(180deg);
+}
+  
+
+.activity_flip_card_front, .activity_flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+  
+
+.activity_flip_card_front {
+    background-color: transparent;
+    color: #2a6f97;
+}
+  
+
+.activity_flip_card_back {
+    background-color: #a9d6e5;
+    color: #013a63;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+/** Line Break **/
+hr.linebreak {
+    border: 5px solid #a9d6e5;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 60px;
+   
+}
+
+
+
+
+/** Map Heading Section **/
+.map_heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #01497c;
+    margin-bottom: 8px;
+}
+
+
+
+
+/** Map Section **/
+.map_stay {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+
+.text_box {
+    color: #013a63;
+
+}
+
+
+.text_box h3 {
+    font-size: 25px;
+    color: #01497c;
+    margin-left: 25px;
+    margin-bottom: 2px;
+}
+
+
+.text_box p {
+    font-size: 16px;
+    color: #013a63;
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+
+.map_stay map {
+    width: 70%;
+    height: 500px;
+    float: left;
+
+}
+
+
+
+
+/** Tourist Review Section **/
+.avatar {
+    width: 170px; 
+    border-radius: 50%; 
+    padding: 10px;
+}
+
+.tourist_card {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #a9d6e5;
+    color: #013a63;
+    border: 6px dotted #01497c;
+    border-radius: 20px;
+}
+
+
+
+
+/** Footer **/
+#footer {
+    font-style: italic;
+    text-align: center;
+    margin: 40px auto;
+}
+
+a {
+    color: #01497c;
+}
